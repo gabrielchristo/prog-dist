@@ -30,6 +30,8 @@ Nota: para executar mais processos do que o número disponível de núcleos no p
 
 Nota: atualmente em 08/2021 irá instalar a versão libomp-10-dev
 
+---
+
 ## OpenACC
 
 ### Instalação
