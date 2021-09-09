@@ -39,6 +39,7 @@ MPI_Status estado;
 /* Envia pedaços com TAMANHO números para cada processo */
     if (meu_ranque == 0) { 
         for (dest=1, inicio=3; dest < num_procs && inicio < n; dest++, inicio += TAMANHO) {
+            printf("inicio: %d\n", inicio);
             MPI_Send(&inicio, 1, MPI_INT, dest, tag, MPI_COMM_WORLD);
         }
 /* Fica recebendo as contagens parciais de cada processo */
@@ -46,6 +47,7 @@ MPI_Status estado;
 		    MPI_Recv(&cont, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &estado);
             total += cont;
             dest = estado.MPI_SOURCE;
+            printf("inicio2: %d\n", inicio);
             if (inicio > n) {
                 tag = 99;
                 stop++;
@@ -59,6 +61,7 @@ MPI_Status estado;
 /* Cada processo escravo recebe o início do espaço de busca */
         while (estado.MPI_TAG != 99) {
             MPI_Recv(&inicio, 1, MPI_INT, raiz, MPI_ANY_TAG, MPI_COMM_WORLD, &estado);
+            printf("inicio3: %d\n", inicio);
             if (estado.MPI_TAG != 99) {
                 for (i = inicio, cont=0; i < (inicio + TAMANHO) && i < n; i+=2) 
 		            if (primo(i) == 1)
