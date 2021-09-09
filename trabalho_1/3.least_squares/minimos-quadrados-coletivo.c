@@ -44,7 +44,7 @@
 #include "mpi.h"
 
 int main(int argc, char **argv) {
-
+  double t_inicial, t_final;
   double *x, *y;
   double mySUMx, mySUMy, mySUMxy, mySUMxx, SUMx, SUMy, SUMxy,
          SUMxx, SUMres, res, slope, y_intercept, y_estimate;
@@ -60,6 +60,8 @@ int main(int argc, char **argv) {
   MPI_Comm_rank (MPI_COMM_WORLD, &myid);
   MPI_Comm_size (MPI_COMM_WORLD, &numprocs);
 
+  /* Registra o tempo inicial de execução do programa */
+    t_inicial = MPI_Wtime();
   /* ----------------------------------------------------------
    * Step 1: Process 0 reads data and sends the value of n
    * ---------------------------------------------------------- */
@@ -176,8 +178,11 @@ int main(int argc, char **argv) {
       printf ("   (%6.2lf %6.2lf)      %6.2lf       %6.2lf\n", 
 	      x[i], y[i], y_estimate, res);
     }
+    /* Registra o tempo final de execução */
+    t_final = MPI_Wtime();
     printf("--------------------------------------------------\n");
     printf("Residual sum = %6.2lf\n", SUMres);
+    printf("Tempo de execucao: %1.3f \n", t_final - t_inicial);    
   }
 
   /* ----------------------------------------------------------	*/
