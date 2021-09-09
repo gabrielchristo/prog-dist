@@ -12,17 +12,20 @@
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
+#include "timer.h"
 #define SEED time(NULL)
 
 int main() {
 
  srand( SEED );
- int i, count, n=1000000000;
- double x,y,z,pi;
+ long i, n=1e11, count;
+ double x,y,z,pi,start,end;
 
- printf("n = %d \n", n);
+ printf("n = %ld \n", n);
 
  count = 0;
+
+ GET_TIME(start);
 
  for(i = 0; i < n; ++i) {
 
@@ -36,8 +39,11 @@ int main() {
  }
 
  pi = (double) count / n * 4;
+
+ GET_TIME(end);
  
- printf("Aproximação de PI é = %g", pi);
+ printf("Aproximação de PI é = %g\n", pi);
+ printf("took %f seconds\n", end - start);
 
  return(0);
 }
