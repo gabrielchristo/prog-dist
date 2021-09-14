@@ -55,3 +55,25 @@ Para verificar o valor atual:
 Para mudar o valor:
 
 `export ACC_DEVICE_TYPE=<type>`
+
+---
+
+## SSH
+
+### Teresópolis
+
+- grupo01@teresopolis.dcc.ufrj.br:22022
+
+- Configurar o arquivo **submission.sh** e usar comando `qsub submission.sh` para iniciar o job
+
+- Utilizar pasta /work/grupo01 para colocar os códigos e rodar os jobs
+
+### Tesla
+
+- grupo01@tesla.dcc.ufrj.br:25252
+
+### Colar texto no vim
+
+`:set paste`
+
+`Ctrl + Shift + V`
