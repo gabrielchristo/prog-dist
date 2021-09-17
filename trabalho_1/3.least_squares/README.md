@@ -38,6 +38,6 @@ Utilizamos a rotina definida no arquivo **timer.h** para medição de tempo da v
 Como os resultados de cada execução podem variar, utilizamos como referência a média dos valores obtidos com 3 rodadas, considerando todos os processos. Com isso obtemos a seguinte tabela:
 | Precisão / Versão | Sequencial | Paralela - 1 processo | Paralela - 2 processos | Paralela - 4 processos | Paralela - 8 processos | Paralela - 12 processos | Paralela - 16 processos |
 |-------------------|------------|-----------------------|------------------------|------------------------|------------------------|-------------------------|-------------------------|
-| 10^6              | 6.232 s    | 7.234 s               | 4.632 s                | 3.355 s                | 2.214 s                | 1.325 s                 | 16.294 s                 |
-| 10^7             | 43,345 s   | 43,435 s              | 23,236 s               | 15,543 s                | 11,367 s                | 11,346 s                 | 8,347 s                 |
-| 10^8             | 236,578 s  | 233,242 s             | 140,356 s              | 89,588 s               | 86,857 s               | 86,123 s                | 87,564 s                |
+| 10^6              | 6.232 s    | 7.234 s               | 4.632 s                | 3.355 s                | 2.214 s                | 1.325 s                 | 15.254 s                 |
+| 10^7             | 42,345 s   | 42,435 s              | 23,236 s               | 15,543 s                | 11,367 s                | 11,346 s                 | 8,456 s                 |
+| 10^8             | 236,578 s  | 233,242 s             | 120,356 s              | 79,588 s               | 76,857 s               | 76,123 s                | 67,564 s                |
