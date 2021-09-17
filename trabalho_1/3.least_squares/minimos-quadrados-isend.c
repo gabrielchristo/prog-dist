@@ -35,8 +35,6 @@
  *  
  * USAGE: Tested to run using 1,2,...,10 processes.
  * 
- * AUTHOR: Dora Abdullah (MPI version, 11/96)
- * LAST REVISED: RYL converted to C (12/11)
  * ---------------------------------------------------------------------- */
 #include <stdlib.h>
 #include <math.h>
