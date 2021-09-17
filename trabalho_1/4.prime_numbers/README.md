@@ -27,7 +27,7 @@ Utilizar valores de N=10^9,10^10 e 10^11
 
 ## Avaliação de desempenho para mpi_primos.c
 
-Executamos com 1,2,4,8,12 e 16 processos com N=10^6,10^7 e 10^8
+Executamos com 1,2,4,8,12 e 16 processos com N=10^9,10^10 e 10^11
 
 Utilizamos a rotina definida no arquivo **timer.h** para medição de tempo da versão sequencial. Já o desempenho da versão paralela foi medido com a rotina **MPI_Wtime**.
 
@@ -42,7 +42,7 @@ Como os resultados de cada execução podem variar, utilizamos como referência 
 
 ## Avaliação de desempenho para mpi_primosbag.c
 
-Executamos com 1,2,4,8,12 e 16 processos com N=10^6,10^7 e 10^8
+Executamos com 1,2,4,8,12 e 16 processos com N=10^9,10^10 e 10^11
 
 Utilizamos a rotina definida no arquivo **timer.h** para medição de tempo da versão sequencial. Já o desempenho da versão paralela foi medido com a rotina **MPI_Wtime**.
 
