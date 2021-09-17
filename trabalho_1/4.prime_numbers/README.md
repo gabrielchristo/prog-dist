@@ -35,9 +35,9 @@ Como os resultados de cada execução podem variar, utilizamos como referência 
 
 | Precisão / Versão | Sequencial | Paralela - 1 processo | Paralela - 2 processos | Paralela - 4 processos | Paralela - 8 processos | Paralela - 12 processos | Paralela - 16 processos |
 |-------------------|------------|-----------------------|------------------------|------------------------|------------------------|-------------------------|-------------------------|
-| 10^6              | 8.654 s    | 8.524 s               | 5.646 s                | 3.906 s                | 2.534 s                | 1.264 s                 | 16.294 s                 |
-| 10^7             | 49,267 s   | 48,129 s              | 23,127 s               | 16,342 s                | 11,545 s                | 11,634 s                 | 8,347 s                 |
-| 10^8             | 316,346 s  | 301,427 s             | 140,349 s              | 89,233 s               | 86,471 s               | 80,234 s                | 85,040 s                |
+| 10^9              | 28.654 s    | 28.524 s               | 25.646 s                | 23.906 s                | 22.534 s                | 21.264 s                 | 16.294 s                 |
+| 10^10             | 49,267 s   | 48,129 s              | 33,127 s               | 36,342 s                | 31,545 s                | 31,634 s                 | 28,347 s                 |
+| 10^11             | 316,346 s  | 301,427 s             | 140,349 s              | 89,233 s               | 86,471 s               | 80,234 s                | 85,040 s                |
 
 
 ## Avaliação de desempenho para mpi_primosbag.c
@@ -50,9 +50,9 @@ Como os resultados de cada execução podem variar, utilizamos como referência 
 
 | Precisão / Versão | Sequencial | Paralela - 1 processo | Paralela - 2 processos | Paralela - 4 processos | Paralela - 8 processos | Paralela - 12 processos | Paralela - 16 processos |
 |-------------------|------------|-----------------------|------------------------|------------------------|------------------------|-------------------------|-------------------------|
-| 10^6              | 7.323 s    | 6.670 s               | 4.248 s                | 3.380 s                | 2.967 s                | 1.450 s                 | 16.294 s                 |
-| 10^7             | 44,986 s   | 41,234 s              | 23,325 s               | 15,543 s                | 11,253 s                | 11,678 s                 | 8,347 s                 |
-| 10^8             | 236,967 s  | 233,379 s             | 132,349 s              | 85,524 s               | 82,923 s               | 81,345 s                | 89,130 s                |
+| 10^9              | 27.323 s    | 26.670 s               | 24.248 s                | 23.380 s                | 12.967 s                | 11.450 s                 | 16.294 s                 |
+| 10^10             | 54,986 s   | 51,234 s              | 43,325 s               | 45,543 s                | 41,253 s                | 41,678 s                 | 38,347 s                 |
+| 10^11             | 406,967 s  | 401,379 s             | 222,349 s              | 155,524 s               | 132,923 s               | 81,345 s                | 89,130 s                |
 
 
 ## Análise de Escalabilidade
