@@ -17,8 +17,12 @@ O algoritmo local sequencial escolhido foi o merge sort devido possuir melhor co
 
 Para avaliar o desempenho utilizamos o método **MPI_Wtime**.
 
+Executando o programa localmente em uma única CPU de 4 núcleos, obtemos a seguinte tabela:
+
 | Elementos / Versão | Paralela - 1 processo | Paralela - 2 processos | Paralela - 4 processos | Paralela - 8 processos | Paralela - 12 processos | Paralela - 16 processos |
 |--------------------|-----------------------|------------------------|------------------------|------------------------|-------------------------|-------------------------|
 | 10 milhôes         | 3.96 s                | 2.68 s                 | 2.11 s                 | 2.14 s                 | 2.18 s                  | 2.23 s                  |
 | 20 milhôes         | 8.25 s                | 5.71 s                 | 4.47 s                 | 4.57 s                 | 4.54 s                  | 4.70 s                  |
 | 40 milhôes         | 17.52 s               | 11.93 s                | 9.45 s                 | 9.67 s                 | 9.71 s                  | 9.82 s                  |
+
+Não foi possível executar os testes com múltiplas CPUs devido o SSH ter apresentado problemas com execução dos jobs nos últimos dias.

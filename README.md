@@ -36,11 +36,13 @@ Nota: atualmente em 08/2021 irá instalar a versão libomp-10-dev
 
 ### Instalação
 
-Necessário GCC de versão 6 ou maior
+Necessário GCC de versão 6 ou maior ou PGCC
 
 ### Compilar
 
-`gcc -fopenacc <input> -o <output>`
+`gcc -fopenacc -fopt-info <input> -o <output>`
+
+`pgcc -acc -ta=<machine> -Minfo=all <input> -o <output>`
 
 Variável de ambiente **ACC_DEVICE_TYPE** pode assumir os seguintes valores:
 
@@ -66,7 +68,7 @@ Para mudar o valor:
 
 - Configurar o arquivo **submission.sh** e usar comando `qsub submission.sh` para iniciar o job
 
-- Utilizar pasta /work/grupo01 para colocar os códigos e rodar os jobs
+- Utilizar pasta `/work/grupo01` para colocar os códigos e rodar os jobs
 
 ### Tesla
 
