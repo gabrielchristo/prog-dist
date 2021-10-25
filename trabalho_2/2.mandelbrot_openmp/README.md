@@ -28,7 +28,7 @@ Basicamente cada thread calcula faixas
 Executando o programa localmente em uma única CPU de 4 núcleos, obtemos a seguinte tabela:
 
 
-| Elementos / Versão | Paralela - 1 processo | Paralela - 8 processos | Paralela - 16 processos | 
+| TamanhoImagem / Versão | Paralela - 1 processo | Paralela - 8 processos | Paralela - 16 processos | 
 |--------------------|-----------------------|------------------------|------------------------|
 | 1000x1000         | 9.96 s                | 6.68 s                 | 3.11 s                 |
 | 2000x2000         | 30.25 s                | 25.71 s                 | 20.17 s                 |
