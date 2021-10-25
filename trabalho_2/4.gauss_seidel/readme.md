@@ -13,7 +13,7 @@ Dados para o problema:
 - As bordas estão sempre com a temperatura igual a 20 graus celsius
 
 ## Abordagem
-Temos um programa simples que simulação 2D de transferência de calor em uma placa de metal de 1022x1022, utilizando o método Gauss-Seidel SOR. 
+Temos um programa simples de simulação 2D de transferência de calor em uma placa de metal de 1022x1022, utilizando o método Gauss-Seidel SOR. 
 O método realiza 4098 iterações.
 
 
