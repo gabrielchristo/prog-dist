@@ -10,8 +10,8 @@
 #include <omp.h>
 #include <time.h>
 
-#define X_RESN 1000 /* x resolution */
-#define Y_RESN 1000 /* y resolution */
+#define X_RESN 2000 /* x resolution */
+#define Y_RESN 2000 /* y resolution */
 #define MAX_ITER (2000)
 #define CHUNK 256
 
@@ -303,8 +303,8 @@ int main(int argc, char *argv[])
     /* Calculate and draw points */
     #pragma omp parallel default(shared)
     {
-        int num_threads = omp_get_num_threads();
-        // printf("num_threads = %d\n", num_threads);
+        int num_threads = 16;//omp_get_num_threads();
+        printf("num_threads = %d\n", num_threads);
         #pragma omp for schedule(dynamic, CHUNK)
         for (int it = 0; it < X_RESN*Y_RESN; it++)
         {
@@ -373,7 +373,7 @@ int main(int argc, char *argv[])
         double elapsed = time_elapsed_nanos*0.000000001;
         printf("%lf\n", elapsed);
 
-        sleep(30);
+        sleep(5);
     }
 
     /* Program Finished */
