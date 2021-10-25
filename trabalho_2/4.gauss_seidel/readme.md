@@ -17,4 +17,20 @@ Dados para o problema:
 
 
 ## Desempenho
+A seguir alguns testes de desempenho que foram executados:
+
 Demorou 21.8556 segundos para executar o algoritmo em uma placa de metal de 1022x1022. Erro maximo na iteracao 45 era 0.009623
+
+Demorou 19.3796 segundos para executar o algoritmo. Erro maximo na iteracao 45 era 0.009623
+
+Demorou 18.6266 segundos para executar o algoritmo. Erro maximo na iteracao 45 era 0.009623
+
+Demorou 16.8012 segundos para executar o algoritmo. Erro maximo na iteracao 45 era 0.009623
+
+Demorou 12.3956 segundos para executar o algoritmo. Erro maximo na iteracao 45 era 0.009623
+
+Demorou 13.4447 segundos para executar o algoritmo. Erro maximo na iteracao 45 era 0.009623
+
+Demorou 16.1079 segundos para executar o algoritmo. Erro maximo na iteracao 45 era 0.009624
+
+Demorou 26.7343 segundos para executar o algoritmo. Erro maximo na iteracao 45 era 0.009623
