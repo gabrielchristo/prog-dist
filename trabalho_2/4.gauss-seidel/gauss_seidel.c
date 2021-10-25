@@ -1,3 +1,4 @@
+//questao 4 - gauss-seidel
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
