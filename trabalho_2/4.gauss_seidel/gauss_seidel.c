@@ -17,7 +17,7 @@ void iniciar();
 
 int main(int argc, char *argv[]) {
     int i, j;
-    int max_iterations= 1<<12;
+    int max_iterations= 4098;
     int iteration = 1;
     double dt = 100;
 

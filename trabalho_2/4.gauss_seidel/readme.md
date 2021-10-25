@@ -13,7 +13,8 @@ Dados para o problema:
 - As bordas estão sempre com a temperatura igual a 20 graus celsius
 
 ## Abordagem
-
+Temos um programa simples que simulação 2D de transferência de calor em uma placa de metal de 1022x1022, utilizando o método Gauss-Seidel SOR. 
+O método realiza 4098 iterações.
 
 
 ## Desempenho
@@ -34,3 +35,5 @@ Demorou 13.4447 segundos para executar o algoritmo. Erro maximo na iteracao 45 e
 Demorou 16.1079 segundos para executar o algoritmo. Erro maximo na iteracao 45 era 0.009624
 
 Demorou 26.7343 segundos para executar o algoritmo. Erro maximo na iteracao 45 era 0.009623
+
+Demorou 37.4091 segundos para executar o algoritmo. Erro maximo na iteracao 45 era 0.009623
