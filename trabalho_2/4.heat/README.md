@@ -1,9 +1,0 @@
-## Objetivo
-
-
-
-## Abordagem
-
-
-
-## Desempenho
